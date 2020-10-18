@@ -39,6 +39,7 @@ export default function App() {
         await setModel(m)
         setLoading(false)
       } catch (error) {
+        await setLoading(false)
         console.log(error)
       }
     }
@@ -53,6 +54,7 @@ export default function App() {
           ToastAndroid.SHORT,
           ToastAndroid.BOTTOM
         )
+        return
       }
       await setText('Predicting')
       await setLoading(true)
@@ -66,6 +68,7 @@ export default function App() {
       await setPredictions(pre)
       setLoading(false)
     } catch (error) {
+      await setLoading(false)
       console.log(error)
       ToastAndroid.showWithGravity(
         'Error occured!',
