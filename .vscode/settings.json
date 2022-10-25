@@ -1,9 +1,14 @@
 {
-    "editor.formatOnSave": true,
-    "prettier.jsxBracketSameLine": true,
-    "prettier.singleQuote": true,
-    "prettier.semi": false,
-    "editor.tabSize": 2,
-    "editor.renderWhitespace": "all",
-    "prettier.tabWidth": 2
-}
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": false
+    },
+    "javascript.preferences.jsxAttributeCompletionStyle": "none",
+    "typescript.preferences.jsxAttributeCompletionStyle": "none",
+    "typescript.preferences.importModuleSpecifier": "non-relative"
+  }

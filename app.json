@@ -2,13 +2,13 @@
   "expo": {
     "name": "ImgFy",
     "slug": "ImgFy",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./app/assets/images/icon.png",
     "splash": {
-      "image": "./src/assets/images/splash.png",
+      "image": "./app/assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#944CD4"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,15 +17,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.afridi1.apps.ImgFy"
     },
     "android": {
-      "package": "com.sayeed.imgfy",
-      "icon": "./src/assets/images/icon.png",
-      "versionCode": 1
+      "icon": "./app/assets/images/icon.png",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "dev.afridi1.apps.ImgFy"
     },
     "web": {
-      "favicon": "./src/assets/images/favicon.png"
+      "favicon": "./app/assets/images/favicon.png"
     }
   }
 }
